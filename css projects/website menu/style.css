@@ -1,0 +1,85 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: lightpink;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.nav
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    gap: 34px;
+}
+ul li
+{
+    position: relative;
+    list-style: none;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 130px;
+    height: 90px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+ul li a
+{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+ul li .icon
+{
+    position: absolute;
+    font-size: 50px;
+    top: 20px;
+}
+ul li .title
+{
+    position: relative;
+    font-size: 30px;
+    opacity: 0;
+    transition: 0.5s;
+    top: 35px;
+}
+ul li:hover .title
+{
+    opacity: 1;
+    transform: translateY(7px);
+    color: rgb(250, 114, 136);
+}
+ul li:hover
+{
+    height: 135px;
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+ul li:hover a
+{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+ul li:hover ion-icon
+{
+    color: rgb(250, 114, 136);
+}
+ul li ion-icon
+{
+    transition: 0.5s;
+}

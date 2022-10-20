@@ -1,0 +1,51 @@
+body
+{
+    box-sizing: border-box;
+    font-family: 'Square Peg', cursive;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.text
+{
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+a
+{
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+}
+a:hover
+{
+    color: rgba(255, 255, 255, 1);
+}
+a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateX(-10px);
+    transition: 0.7s;
+}
+a:hover::before
+{
+    transform: translateX(280px);
+}
