@@ -89,13 +89,3 @@ function restore2cards(nr1, nr2)
 	lock = false;
 }
 
-let buttons = document.getElementsByName('scheme');
-for (let inp of buttons)
-{
-	let color = inp.value;
-	
-	inp.addEventListener('click', () => {
-			
-		color_site(color);
-	});
-}
